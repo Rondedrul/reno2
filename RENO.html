@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .video-container {
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ccc;  /* Dunne rand rondom de video-container */
+            border-radius: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+        .video-container video {
+            width: 80%;
+            height: auto;
+            border: 1px solid #ccc;  /* Dunne rand rondom de video */
+            border-radius: 5px;
+        }
+        .video-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .video-info {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 5px;
+        }
+        .ad-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ddd;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .ad-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .close-ad {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>RENO</header>
+
+<div class="video-container">
+    <div class="video-name">RENO promovideo</div>
+	 <div class="video-info">RensHetMens | 28-3-2025</div>
+    <video controls>
+        <source src="Renopromvid1.mov" type="video/mp4">
+        Je browser ondersteunt dit videoformaat niet.
+    </video>
+</div>
+
+<div class="video-container">
+    <div class="video-name">Naam</div>
+	 <div class="video-info">? | xx-xx-xxxx</div>
+    <video controls>
+        <source src="Test Video RENO 1" type="video/mp4">
+        Je browser ondersteunt dit videoformaat niet.
+    </video>
+</div>
+
+<!-- Advertentie -->
+<div <div class="ad-container" id="ad-container-1">
+    <button class="close-ad" onclick="closeAd('ad-container-1')">X</button>
+    <a href="https://www.example.com" target="_blank">
+        <img src="Frixidad1.png" alt="Ga naar de website van Frixid">
+    </a>
+</div>
+
+<div class="video-container">
+    <div class="video-name">Naam</div>
+	 <div class="video-info">? | xx-xx-xxxx</div>
+    <video controls>
+        <source src="video3.mp4" type="video/mp4">
+        Je browser ondersteunt dit videoformaat niet.
+    </video>
+</div>
+
+<div class="video-container">
+    <div class="video-name">Naam</div>
+	 <div class="video-info">? | xx-xx-xxxx</div>
+    <video controls>
+        <source src="video3.mp4" type="video/mp4">
+        Je browser ondersteunt dit videoformaat niet.
+    </video>
+</div>
+
+<!-- Advertentie 2 -->
+<div class="ad-container" id="ad-container-2">
+    <button class="close-ad" onclick="closeAd('ad-container-2')">X</button>
+    <a href="https://www.example.com" target="_blank">
+        <img src="Wilcoled.jpg" alt="Ga naar de website van WilcoLed" class="small-ad">
+    </a>
+</div>
+
+<style>
+    /* Specifieke styling voor advertentie 2 */
+    #ad-container-2 img.small-ad {
+        width: 30%; /* Pas de breedte aan naar je voorkeur */
+        height: auto; /* Houd de hoogte in verhouding met de breedte */
+        max-width: 600px; /* Optioneel: stel een maximale breedte in */
+    }
+</style>
+
+<div class="video-container">
+    <div class="video-name">Naam</div>
+	 <div class="video-info">? | xx-xx-xxxx</div>
+    <video controls>
+        <source src="video3.mp4" type="video/mp4">
+        Je browser ondersteunt dit videoformaat niet.
+    </video>
+</div>
+
+<script>
+    // Functie om de advertentie te sluiten door het id van de advertentie door te geven
+    function closeAd(adId) {
+        document.getElementById(adId).style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
+
